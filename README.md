@@ -1,2 +1,2 @@
 # Pygame-Boilerplate
-PyGame boilerplate allowing you to start your python gamedev project faster. 
+PyGame boilerplate allowing you to start your python game project faster. 
