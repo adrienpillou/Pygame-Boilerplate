@@ -1,2 +1,2 @@
-# __init__.py
+# __init__.py file
 # Import your custom objects & classes here
