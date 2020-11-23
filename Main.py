@@ -26,28 +26,27 @@ pygame.display.set_caption(TITLE)
 def start():
     pass
 
-def update(dt):
+def update():
     draw()
     pygame.display.update()
     pass
 
 def draw():
-    surface.fill((0,0,0))
+    surface.fill((0,0,0)) # Clear the screen surface
     pass
 
 def quit():
-    running = False
     pygame.display.quit()
 
 if __name__ == "__main__":
     # execute only if run as a script
     start()
-    while running:
-        dt = clock.tick(TARGET_FPS) / 1000
-        update(dt)
+    while True:
+        update()
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 quit()
             if event.type == pygame.KEYDOWN:
                 if event.key == pygame.K_ESCAPE:
                     quit()
+        clock.tick(TARGET_FPS)
